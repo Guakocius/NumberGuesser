@@ -59,10 +59,10 @@ public class NumberGuesser extends JFrame {
                 new NumberGuesser();
             }
         } catch (NumberFormatException ex) {
-            feedBackLabel.setText("You entered an invalid number!");
+            feedBackLabel.setText("Try again");
+            new NumberGuesser();
         }
     }
-
     public static void main(String[] args) {
         new NumberGuesser();
     }
